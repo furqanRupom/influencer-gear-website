@@ -166,6 +166,9 @@ main section style start............................
     align-items: center;
     gap: 8rem;
 }
+.journey-image img{
+    width: 100%;
+}
 
 .journey-intro {
     font-size: 3.25rem;
@@ -186,8 +189,8 @@ main section style start............................
 
 .circle {
     z-index: -1;
-    top: 90px;
-    left: 90px;
+    top: 5.625rem;
+    left: 5.625rem;
     background-color: var(--bg-secondary);
     position: absolute;
     width: 60%;
@@ -244,7 +247,7 @@ main section style start............................
 
 }
 
-.popular-img>img {
+.popular-img >img{
     width: 100%;
 }
 
@@ -360,6 +363,12 @@ footer section style start...........................
     gap: 0.9rem;
 }
 
+.hamburger{
+    display: none;
+}
+.card{
+    display: none;
+}
 
 
 
@@ -378,13 +387,45 @@ footer section style end...........................
 
 @media  screen and (max-width:688px) {
     
+    .container{
+        padding: 0;
+    }
+    .container-flued{
+        padding: 0;
+    }
 
+    nav{
+        display: none;
+    }
 
+    .header{
+        justify-content: space-between;
+        padding: 2rem;
+        
+    }
+    .nav-title{
+        font-size: 1rem;
+    }
+    .hamburger{
+        display: block;
+        color: var(--gray-900);
+        font-size: 1rem;
+    }
+    .card {
+        display: block;
+        color: var(--gray-900);
+        font-size: 1rem;
+    }
 
     .journey-container{
         flex-direction: column-reverse;
         text-align: center;
+        justify-content: center;
         
+    }
+
+    .journey-intro{
+        font-size: 1.5rem;
     }
     .btn-primary{
         margin: 0 auto;
@@ -400,10 +441,18 @@ footer section style end...........................
         text-align: center;
         gap: 1rem;
     }
+    .feature-title{
+        font-size: 1.2rem;
+    }
     .btn-tertiary{
         margin: 0 auto;
     }
+
 }
+
+
+
+
 
 
 @media screen and (min-width:689px) and (max-width:992px){
