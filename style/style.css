@@ -1,5 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+:root{
+    --font-poppins:'Poppins', sans-serif;
+    --gray-900:#18191F;
+    --gray-800:#3A3A3A;
+    --gray-700:#787885;
+    --gray-600:#6C6C6C;
+    --white-:#FFFFFF;
+    --pink:#E02C6D;
+    --bg-primary:#E02C6D;
+    --bg-secondary:rgb(221, 226, 231);
+    --rounded:0.3rem;
+    --rounded-md:1rem;
+    --rounded-full:50%;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--font-poppins);
+}
+
+.margin-top{
+    margin-top: 10rem;
+}
+
+/* ********------------------------------
+
+header section style start............................
+
+---------------------------------******** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+nav ul{
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+nav ul li {
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    color: var(--gray-800);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* ********------------------------------
+
+header section style end............................
+
+---------------------------------******** */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********------------------------------
+
+main section style start............................
+
+---------------------------------******** */
+
+
+/* start my journey section style start */
+
+
+.journey-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+}
+.journey-intro{
+    font-size: 3.25rem;
+}
+
+.journey-description{
+    padding: 1rem 0;
+}
+
+.btn-primary{
+    display: flex;
+    padding: 0.6rem 1.25rem;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-);
+    background: var(--bg-primary);
+    border: none;
+    border-radius: var(--rounded-md);
+    
+    
+}
+
+.journey-image{
+    position: relative;
+    border: 1px solid var(--bg-secondary);
+    border-radius: var(--rounded-full);
+    padding: 2rem 1rem;
+    
+}
+
+.circle{
+    z-index: -1;
+    top: 90px;
+    left: 90px;
+    background-color: var(--bg-secondary);
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: var(--rounded-full);
+    color: #655c5f;
+}
+
+/* start my journey section style end */
+
+
+
+/* place section style start */
+
+.place-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* place section style end */
+
+
+
+
+
+
+
+
+
+
+/* ********------------------------------
+
+main section style end...........................
+
+---------------------------------******** */
