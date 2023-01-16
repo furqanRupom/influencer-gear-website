@@ -30,8 +30,10 @@
     width: 100%;
     margin: 0 auto;
     font-family: var(--font-poppins);
+    overflow: hidden;
 }
 .container-flued{
+    overflow: hidden;
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
@@ -207,6 +209,7 @@ main section style start............................
 /* place section style start */
 
 .place-container {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -338,6 +341,7 @@ footer section style start...........................
 ---------------------------------******** */
 
 .footer {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,7 +396,7 @@ footer section style end...........................
     
     .container{
         max-width: 100%;
-        margin: 0 auto;
+        margin: 2rem auto 0;
         
     }
     .container-flued{
@@ -484,7 +488,7 @@ footer section style end...........................
         text-align: center;
     }
     .btn-primary{
-        margin: 0 auto;
+        margin:  auto;
     }
     .popular-container{
         grid-template-columns: repeat(2,1fr);
